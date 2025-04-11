@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+  <title>Jogo de Adivinhação</title> <!-- Título da página -->
+  <style>
+    /* Estilos para o corpo da página */
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte padrão */
+      text-align: center; /* Centraliza o conteúdo */
+      margin-top: 100px; /* Adiciona margem superior */
+    }
+
+    /* Estilos para os inputs e botões */
+    input, button {
+      padding: 10px; /* Adiciona preenchimento interno */
+      font-size: 1em; /* Define o tamanho da fonte */
+      margin: 5px; /* Adiciona margem entre os elementos */
+    }
+
+    /* Estilos para a mensagem de feedback */
+    #mensagem {
+      font-size: 1.2em; /* Define o tamanho da fonte */
+      margin-top: 20px; /* Adiciona margem superior */
+    }
+  </style>
+</head>
+<body>
+  <h1> Jogo de Adivinhação</h1> <!-- Título principal do jogo -->
+  <p>Digite um número entre 1 e 100:</p> <!-- Instrução para o usuário -->
+
+  <input type="number" id="palpite" placeholder="Seu palpite"> <!-- Campo para o usuário inserir o palpite -->
+  <button onclick="jogo.tentar(document.getElementById('palpite').value)">Tentar</button> <!-- Botão para enviar o palpite -->
+
+  <div id="mensagem"></div> <!-- Div para exibir mensagens de feedback -->
+
+  <script src="index.js"></script> <!-- Importa o arquivo JavaScript com a lógica do jogo -->
+</body>
+</html>
